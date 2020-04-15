@@ -1,0 +1,817 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8C2A5C7243AF016009E489F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A5C6243AF016009E489F /* AppDelegate.swift */; };
+		A8C2A5CB243AF016009E489F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A5CA243AF016009E489F /* ViewController.swift */; };
+		A8C2A5D0243AF022009E489F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C2A5CF243AF022009E489F /* Assets.xcassets */; };
+		A8C2A5D3243AF022009E489F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8C2A5D1243AF022009E489F /* LaunchScreen.storyboard */; };
+		A8C2A5DE243AF022009E489F /* Redux_VMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A5DD243AF022009E489F /* Redux_VMTests.swift */; };
+		A8C2A5EA243AF048009E489F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A5E9243AF048009E489F /* Store.swift */; };
+		A8C2A5EC243AF05D009E489F /* RootReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A5EB243AF05D009E489F /* RootReducer.swift */; };
+		A8C2A5EE243AF075009E489F /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A5ED243AF075009E489F /* Actions.swift */; };
+		A8C2A5F0243AF087009E489F /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A5EF243AF087009E489F /* RootState.swift */; };
+		A8C2A5F4243AF1FC009E489F /* GuiReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A5F2243AF1FC009E489F /* GuiReducer.swift */; };
+		A8C2A5F5243AF1FC009E489F /* GuiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A5F3243AF1FC009E489F /* GuiState.swift */; };
+		A8C2A5FD243AF242009E489F /* NavigationScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A5F7243AF242009E489F /* NavigationScreenViewController.swift */; };
+		A8C2A5FE243AF242009E489F /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A5F8243AF242009E489F /* Screen.swift */; };
+		A8C2A5FF243AF242009E489F /* NavigationScreenReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A5F9243AF242009E489F /* NavigationScreenReducer.swift */; };
+		A8C2A600243AF242009E489F /* NavigationScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A5FA243AF242009E489F /* NavigationScreenState.swift */; };
+		A8C2A601243AF242009E489F /* NavigationScreenAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A5FB243AF242009E489F /* NavigationScreenAction.swift */; };
+		A8C2A602243AF242009E489F /* NavigationScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C2A5FC243AF242009E489F /* NavigationScreenViewController.xib */; };
+		A8C2A60B243AF2D5009E489F /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A604243AF2D5009E489F /* Log.swift */; };
+		A8C2A60C243AF2D5009E489F /* AppBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A605243AF2D5009E489F /* AppBuilder.swift */; };
+		A8C2A60D243AF2D5009E489F /* KeychainConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A607243AF2D5009E489F /* KeychainConfiguration.swift */; };
+		A8C2A60E243AF2D5009E489F /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A608243AF2D5009E489F /* KeychainPasswordItem.swift */; };
+		A8C2A60F243AF2D5009E489F /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A609243AF2D5009E489F /* KeychainService.swift */; };
+		A8C2A610243AF2D5009E489F /* DefaultConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A60A243AF2D5009E489F /* DefaultConfiguration.swift */; };
+		A8C2A61A243AF8B4009E489F /* LoginScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C2A613243AF8B3009E489F /* LoginScreenViewController.xib */; };
+		A8C2A61B243AF8B4009E489F /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A614243AF8B3009E489F /* LoginScreenViewController.swift */; };
+		A8C2A61E243AF8B4009E489F /* LoginScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A618243AF8B3009E489F /* LoginScreenViewModel.swift */; };
+		A8C2A61F243AF8B4009E489F /* LoginScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A619243AF8B4009E489F /* LoginScreenBuilder.swift */; };
+		A8C2A622243B09C0009E489F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8C2A620243B09C0009E489F /* Main.storyboard */; };
+		A8C2A624243B1FE9009E489F /* SignupScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A623243B1FE9009E489F /* SignupScreenBuilder.swift */; };
+		A8C2A626243B206B009E489F /* SignupScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A625243B206B009E489F /* SignupScreenViewModel.swift */; };
+		A8C2A628243B2167009E489F /* LoginScreenAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A627243B2167009E489F /* LoginScreenAction.swift */; };
+		A8C2A62A243B2638009E489F /* LoginScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A629243B2638009E489F /* LoginScreenState.swift */; };
+		A8C2A62C243C4653009E489F /* LoginScreenReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A62B243C4653009E489F /* LoginScreenReducer.swift */; };
+		A8C2A62F243C953B009E489F /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = A8C2A62E243C953B009E489F /* NVActivityIndicatorView */; };
+		A8C2A632243CAA3C009E489F /* DashboardScreenReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A631243CAA3C009E489F /* DashboardScreenReducer.swift */; };
+		A8C2A634243CAA64009E489F /* DashboardScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A633243CAA64009E489F /* DashboardScreenState.swift */; };
+		A8C2A636243CAA75009E489F /* DashboardScreenAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A635243CAA75009E489F /* DashboardScreenAction.swift */; };
+		A8C2A638243CAA84009E489F /* DashboardScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A637243CAA84009E489F /* DashboardScreenBuilder.swift */; };
+		A8C2A63C243CAD12009E489F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A63A243CAD12009E489F /* DashboardViewController.swift */; };
+		A8C2A63D243CAD12009E489F /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C2A63B243CAD12009E489F /* DashboardViewController.xib */; };
+		A8C2A640243CAD3F009E489F /* DashboardScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A63F243CAD3F009E489F /* DashboardScreenViewModel.swift */; };
+		A8C2A64D243D9CD0009E489F /* SignupScreenAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A64C243D9CD0009E489F /* SignupScreenAction.swift */; };
+		A8C2A64F243D9CE2009E489F /* SignupScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A64E243D9CE2009E489F /* SignupScreenState.swift */; };
+		A8C2A651243D9CF6009E489F /* SignupScreenReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A650243D9CF6009E489F /* SignupScreenReducer.swift */; };
+		A8C2A656243EF981009E489F /* SignupScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A654243EF981009E489F /* SignupScreenViewController.swift */; };
+		A8C2A657243EF981009E489F /* SignupScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C2A655243EF981009E489F /* SignupScreenViewController.xib */; };
+		A8C2A65D243F8208009E489F /* ForgotPasswordScreenReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A659243F8207009E489F /* ForgotPasswordScreenReducer.swift */; };
+		A8C2A65E243F8209009E489F /* ForgotPasswordScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A65A243F8208009E489F /* ForgotPasswordScreenState.swift */; };
+		A8C2A65F243F8209009E489F /* ForgotPasswordScreenAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A65B243F8208009E489F /* ForgotPasswordScreenAction.swift */; };
+		A8C2A660243F8209009E489F /* ForgotPasswordScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A65C243F8208009E489F /* ForgotPasswordScreenBuilder.swift */; };
+		A8C2A6642444247F009E489F /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A6622444247F009E489F /* ForgotPasswordViewController.swift */; };
+		A8C2A6652444247F009E489F /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C2A6632444247F009E489F /* ForgotPasswordViewController.xib */; };
+		A8C2A668244424AF009E489F /* ForgotPasswordScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A667244424AF009E489F /* ForgotPasswordScreenViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8C2A5DA243AF022009E489F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8C2A5BB243AF015009E489F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8C2A5C2243AF016009E489F;
+			remoteInfo = "Redux+VM";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A8C2A5C3243AF016009E489F /* Redux+VM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Redux+VM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C2A5C6243AF016009E489F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A8C2A5CA243AF016009E489F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A8C2A5CF243AF022009E489F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8C2A5D2243AF022009E489F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A8C2A5D4243AF022009E489F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8C2A5D9243AF022009E489F /* Redux+VMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Redux+VMTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C2A5DD243AF022009E489F /* Redux_VMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redux_VMTests.swift; sourceTree = "<group>"; };
+		A8C2A5DF243AF022009E489F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8C2A5E9243AF048009E489F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		A8C2A5EB243AF05D009E489F /* RootReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootReducer.swift; sourceTree = "<group>"; };
+		A8C2A5ED243AF075009E489F /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		A8C2A5EF243AF087009E489F /* RootState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
+		A8C2A5F2243AF1FC009E489F /* GuiReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuiReducer.swift; sourceTree = "<group>"; };
+		A8C2A5F3243AF1FC009E489F /* GuiState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuiState.swift; sourceTree = "<group>"; };
+		A8C2A5F7243AF242009E489F /* NavigationScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationScreenViewController.swift; sourceTree = "<group>"; };
+		A8C2A5F8243AF242009E489F /* Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		A8C2A5F9243AF242009E489F /* NavigationScreenReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationScreenReducer.swift; sourceTree = "<group>"; };
+		A8C2A5FA243AF242009E489F /* NavigationScreenState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationScreenState.swift; sourceTree = "<group>"; };
+		A8C2A5FB243AF242009E489F /* NavigationScreenAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationScreenAction.swift; sourceTree = "<group>"; };
+		A8C2A5FC243AF242009E489F /* NavigationScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationScreenViewController.xib; sourceTree = "<group>"; };
+		A8C2A604243AF2D5009E489F /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		A8C2A605243AF2D5009E489F /* AppBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBuilder.swift; sourceTree = "<group>"; };
+		A8C2A607243AF2D5009E489F /* KeychainConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainConfiguration.swift; sourceTree = "<group>"; };
+		A8C2A608243AF2D5009E489F /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
+		A8C2A609243AF2D5009E489F /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		A8C2A60A243AF2D5009E489F /* DefaultConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultConfiguration.swift; sourceTree = "<group>"; };
+		A8C2A613243AF8B3009E489F /* LoginScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginScreenViewController.xib; sourceTree = "<group>"; };
+		A8C2A614243AF8B3009E489F /* LoginScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		A8C2A618243AF8B3009E489F /* LoginScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewModel.swift; sourceTree = "<group>"; };
+		A8C2A619243AF8B4009E489F /* LoginScreenBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenBuilder.swift; sourceTree = "<group>"; };
+		A8C2A621243B09C0009E489F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8C2A623243B1FE9009E489F /* SignupScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupScreenBuilder.swift; sourceTree = "<group>"; };
+		A8C2A625243B206B009E489F /* SignupScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupScreenViewModel.swift; sourceTree = "<group>"; };
+		A8C2A627243B2167009E489F /* LoginScreenAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenAction.swift; sourceTree = "<group>"; };
+		A8C2A629243B2638009E489F /* LoginScreenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenState.swift; sourceTree = "<group>"; };
+		A8C2A62B243C4653009E489F /* LoginScreenReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenReducer.swift; sourceTree = "<group>"; };
+		A8C2A631243CAA3C009E489F /* DashboardScreenReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreenReducer.swift; sourceTree = "<group>"; };
+		A8C2A633243CAA64009E489F /* DashboardScreenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreenState.swift; sourceTree = "<group>"; };
+		A8C2A635243CAA75009E489F /* DashboardScreenAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreenAction.swift; sourceTree = "<group>"; };
+		A8C2A637243CAA84009E489F /* DashboardScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreenBuilder.swift; sourceTree = "<group>"; };
+		A8C2A63A243CAD12009E489F /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		A8C2A63B243CAD12009E489F /* DashboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
+		A8C2A63F243CAD3F009E489F /* DashboardScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashboardScreenViewModel.swift; path = "Redux+VM/GUI/Dashboard/ViewModel/DashboardScreenViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		A8C2A64C243D9CD0009E489F /* SignupScreenAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupScreenAction.swift; sourceTree = "<group>"; };
+		A8C2A64E243D9CE2009E489F /* SignupScreenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupScreenState.swift; sourceTree = "<group>"; };
+		A8C2A650243D9CF6009E489F /* SignupScreenReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupScreenReducer.swift; sourceTree = "<group>"; };
+		A8C2A654243EF981009E489F /* SignupScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupScreenViewController.swift; sourceTree = "<group>"; };
+		A8C2A655243EF981009E489F /* SignupScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupScreenViewController.xib; sourceTree = "<group>"; };
+		A8C2A659243F8207009E489F /* ForgotPasswordScreenReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordScreenReducer.swift; sourceTree = "<group>"; };
+		A8C2A65A243F8208009E489F /* ForgotPasswordScreenState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordScreenState.swift; sourceTree = "<group>"; };
+		A8C2A65B243F8208009E489F /* ForgotPasswordScreenAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordScreenAction.swift; sourceTree = "<group>"; };
+		A8C2A65C243F8208009E489F /* ForgotPasswordScreenBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordScreenBuilder.swift; sourceTree = "<group>"; };
+		A8C2A6622444247F009E489F /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		A8C2A6632444247F009E489F /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
+		A8C2A667244424AF009E489F /* ForgotPasswordScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordScreenViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8C2A5C0243AF016009E489F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C2A62F243C953B009E489F /* NVActivityIndicatorView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8C2A5D6243AF022009E489F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8C2A5BA243AF015009E489F = {
+			isa = PBXGroup;
+			children = (
+				A8C2A5C5243AF016009E489F /* Redux+VM */,
+				A8C2A5DC243AF022009E489F /* Redux+VMTests */,
+				A8C2A5C4243AF016009E489F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8C2A5C4243AF016009E489F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A5C3243AF016009E489F /* Redux+VM.app */,
+				A8C2A5D9243AF022009E489F /* Redux+VMTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8C2A5C5243AF016009E489F /* Redux+VM */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A603243AF2A8009E489F /* App */,
+				A8C2A5F1243AF1F2009E489F /* GUI */,
+				A8C2A5E8243AF030009E489F /* State */,
+				A8C2A5C6243AF016009E489F /* AppDelegate.swift */,
+				A8C2A5CA243AF016009E489F /* ViewController.swift */,
+				A8C2A620243B09C0009E489F /* Main.storyboard */,
+				A8C2A5CF243AF022009E489F /* Assets.xcassets */,
+				A8C2A5D1243AF022009E489F /* LaunchScreen.storyboard */,
+				A8C2A5D4243AF022009E489F /* Info.plist */,
+			);
+			path = "Redux+VM";
+			sourceTree = "<group>";
+		};
+		A8C2A5DC243AF022009E489F /* Redux+VMTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A5DD243AF022009E489F /* Redux_VMTests.swift */,
+				A8C2A5DF243AF022009E489F /* Info.plist */,
+			);
+			path = "Redux+VMTests";
+			sourceTree = "<group>";
+		};
+		A8C2A5E8243AF030009E489F /* State */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A5E9243AF048009E489F /* Store.swift */,
+				A8C2A5EB243AF05D009E489F /* RootReducer.swift */,
+				A8C2A5ED243AF075009E489F /* Actions.swift */,
+				A8C2A5EF243AF087009E489F /* RootState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		A8C2A5F1243AF1F2009E489F /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A658243EF992009E489F /* ForgotPasswordScreen */,
+				A8C2A630243CAA23009E489F /* Dashboard */,
+				A8C2A612243AF649009E489F /* LoginScreen */,
+				A8C2A611243AF635009E489F /* SignUp */,
+				A8C2A5F6243AF231009E489F /* NavigationScreen */,
+				A8C2A5F2243AF1FC009E489F /* GuiReducer.swift */,
+				A8C2A5F3243AF1FC009E489F /* GuiState.swift */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		A8C2A5F6243AF231009E489F /* NavigationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A5FB243AF242009E489F /* NavigationScreenAction.swift */,
+				A8C2A5F9243AF242009E489F /* NavigationScreenReducer.swift */,
+				A8C2A5FA243AF242009E489F /* NavigationScreenState.swift */,
+				A8C2A5F7243AF242009E489F /* NavigationScreenViewController.swift */,
+				A8C2A5FC243AF242009E489F /* NavigationScreenViewController.xib */,
+				A8C2A5F8243AF242009E489F /* Screen.swift */,
+			);
+			path = NavigationScreen;
+			sourceTree = "<group>";
+		};
+		A8C2A603243AF2A8009E489F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A605243AF2D5009E489F /* AppBuilder.swift */,
+				A8C2A60A243AF2D5009E489F /* DefaultConfiguration.swift */,
+				A8C2A606243AF2D5009E489F /* Keychain */,
+				A8C2A604243AF2D5009E489F /* Log.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A8C2A606243AF2D5009E489F /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A607243AF2D5009E489F /* KeychainConfiguration.swift */,
+				A8C2A608243AF2D5009E489F /* KeychainPasswordItem.swift */,
+				A8C2A609243AF2D5009E489F /* KeychainService.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		A8C2A611243AF635009E489F /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A653243D9D07009E489F /* ViewModel */,
+				A8C2A652243D9CFF009E489F /* View */,
+				A8C2A623243B1FE9009E489F /* SignupScreenBuilder.swift */,
+				A8C2A64E243D9CE2009E489F /* SignupScreenState.swift */,
+				A8C2A650243D9CF6009E489F /* SignupScreenReducer.swift */,
+				A8C2A64C243D9CD0009E489F /* SignupScreenAction.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		A8C2A612243AF649009E489F /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A64B243D8FAE009E489F /* ViewModel */,
+				A8C2A64A243D8F9C009E489F /* View */,
+				A8C2A619243AF8B4009E489F /* LoginScreenBuilder.swift */,
+				A8C2A627243B2167009E489F /* LoginScreenAction.swift */,
+				A8C2A629243B2638009E489F /* LoginScreenState.swift */,
+				A8C2A62B243C4653009E489F /* LoginScreenReducer.swift */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		A8C2A630243CAA23009E489F /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A63E243CAD1C009E489F /* ViewModel */,
+				A8C2A639243CACEE009E489F /* View */,
+				A8C2A631243CAA3C009E489F /* DashboardScreenReducer.swift */,
+				A8C2A633243CAA64009E489F /* DashboardScreenState.swift */,
+				A8C2A635243CAA75009E489F /* DashboardScreenAction.swift */,
+				A8C2A637243CAA84009E489F /* DashboardScreenBuilder.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		A8C2A639243CACEE009E489F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A63A243CAD12009E489F /* DashboardViewController.swift */,
+				A8C2A63B243CAD12009E489F /* DashboardViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8C2A63E243CAD1C009E489F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A63F243CAD3F009E489F /* DashboardScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A8C2A64A243D8F9C009E489F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A614243AF8B3009E489F /* LoginScreenViewController.swift */,
+				A8C2A613243AF8B3009E489F /* LoginScreenViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8C2A64B243D8FAE009E489F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A618243AF8B3009E489F /* LoginScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A8C2A652243D9CFF009E489F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A654243EF981009E489F /* SignupScreenViewController.swift */,
+				A8C2A655243EF981009E489F /* SignupScreenViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8C2A653243D9D07009E489F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A625243B206B009E489F /* SignupScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A8C2A658243EF992009E489F /* ForgotPasswordScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A6662444248B009E489F /* ViewModel */,
+				A8C2A6612444245F009E489F /* View */,
+				A8C2A65B243F8208009E489F /* ForgotPasswordScreenAction.swift */,
+				A8C2A65C243F8208009E489F /* ForgotPasswordScreenBuilder.swift */,
+				A8C2A659243F8207009E489F /* ForgotPasswordScreenReducer.swift */,
+				A8C2A65A243F8208009E489F /* ForgotPasswordScreenState.swift */,
+			);
+			path = ForgotPasswordScreen;
+			sourceTree = "<group>";
+		};
+		A8C2A6612444245F009E489F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A6622444247F009E489F /* ForgotPasswordViewController.swift */,
+				A8C2A6632444247F009E489F /* ForgotPasswordViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A8C2A6662444248B009E489F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8C2A667244424AF009E489F /* ForgotPasswordScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8C2A5C2243AF016009E489F /* Redux+VM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8C2A5E2243AF022009E489F /* Build configuration list for PBXNativeTarget "Redux+VM" */;
+			buildPhases = (
+				A8C2A5BF243AF016009E489F /* Sources */,
+				A8C2A5C0243AF016009E489F /* Frameworks */,
+				A8C2A5C1243AF016009E489F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Redux+VM";
+			packageProductDependencies = (
+				A8C2A62E243C953B009E489F /* NVActivityIndicatorView */,
+			);
+			productName = "Redux+VM";
+			productReference = A8C2A5C3243AF016009E489F /* Redux+VM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8C2A5D8243AF022009E489F /* Redux+VMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8C2A5E5243AF022009E489F /* Build configuration list for PBXNativeTarget "Redux+VMTests" */;
+			buildPhases = (
+				A8C2A5D5243AF022009E489F /* Sources */,
+				A8C2A5D6243AF022009E489F /* Frameworks */,
+				A8C2A5D7243AF022009E489F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8C2A5DB243AF022009E489F /* PBXTargetDependency */,
+			);
+			name = "Redux+VMTests";
+			productName = "Redux+VMTests";
+			productReference = A8C2A5D9243AF022009E489F /* Redux+VMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8C2A5BB243AF015009E489F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = joy;
+				TargetAttributes = {
+					A8C2A5C2243AF016009E489F = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					A8C2A5D8243AF022009E489F = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = A8C2A5C2243AF016009E489F;
+					};
+				};
+			};
+			buildConfigurationList = A8C2A5BE243AF015009E489F /* Build configuration list for PBXProject "Redux+VM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8C2A5BA243AF015009E489F;
+			packageReferences = (
+				A8C2A62D243C953B009E489F /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+			);
+			productRefGroup = A8C2A5C4243AF016009E489F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8C2A5C2243AF016009E489F /* Redux+VM */,
+				A8C2A5D8243AF022009E489F /* Redux+VMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8C2A5C1243AF016009E489F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C2A6652444247F009E489F /* ForgotPasswordViewController.xib in Resources */,
+				A8C2A5D3243AF022009E489F /* LaunchScreen.storyboard in Resources */,
+				A8C2A622243B09C0009E489F /* Main.storyboard in Resources */,
+				A8C2A5D0243AF022009E489F /* Assets.xcassets in Resources */,
+				A8C2A602243AF242009E489F /* NavigationScreenViewController.xib in Resources */,
+				A8C2A61A243AF8B4009E489F /* LoginScreenViewController.xib in Resources */,
+				A8C2A63D243CAD12009E489F /* DashboardViewController.xib in Resources */,
+				A8C2A657243EF981009E489F /* SignupScreenViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8C2A5D7243AF022009E489F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8C2A5BF243AF016009E489F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C2A5CB243AF016009E489F /* ViewController.swift in Sources */,
+				A8C2A628243B2167009E489F /* LoginScreenAction.swift in Sources */,
+				A8C2A65F243F8209009E489F /* ForgotPasswordScreenAction.swift in Sources */,
+				A8C2A668244424AF009E489F /* ForgotPasswordScreenViewModel.swift in Sources */,
+				A8C2A5C7243AF016009E489F /* AppDelegate.swift in Sources */,
+				A8C2A632243CAA3C009E489F /* DashboardScreenReducer.swift in Sources */,
+				A8C2A60B243AF2D5009E489F /* Log.swift in Sources */,
+				A8C2A640243CAD3F009E489F /* DashboardScreenViewModel.swift in Sources */,
+				A8C2A60C243AF2D5009E489F /* AppBuilder.swift in Sources */,
+				A8C2A6642444247F009E489F /* ForgotPasswordViewController.swift in Sources */,
+				A8C2A61E243AF8B4009E489F /* LoginScreenViewModel.swift in Sources */,
+				A8C2A634243CAA64009E489F /* DashboardScreenState.swift in Sources */,
+				A8C2A5F4243AF1FC009E489F /* GuiReducer.swift in Sources */,
+				A8C2A60E243AF2D5009E489F /* KeychainPasswordItem.swift in Sources */,
+				A8C2A62C243C4653009E489F /* LoginScreenReducer.swift in Sources */,
+				A8C2A610243AF2D5009E489F /* DefaultConfiguration.swift in Sources */,
+				A8C2A626243B206B009E489F /* SignupScreenViewModel.swift in Sources */,
+				A8C2A600243AF242009E489F /* NavigationScreenState.swift in Sources */,
+				A8C2A64D243D9CD0009E489F /* SignupScreenAction.swift in Sources */,
+				A8C2A651243D9CF6009E489F /* SignupScreenReducer.swift in Sources */,
+				A8C2A61B243AF8B4009E489F /* LoginScreenViewController.swift in Sources */,
+				A8C2A61F243AF8B4009E489F /* LoginScreenBuilder.swift in Sources */,
+				A8C2A5EC243AF05D009E489F /* RootReducer.swift in Sources */,
+				A8C2A64F243D9CE2009E489F /* SignupScreenState.swift in Sources */,
+				A8C2A624243B1FE9009E489F /* SignupScreenBuilder.swift in Sources */,
+				A8C2A65D243F8208009E489F /* ForgotPasswordScreenReducer.swift in Sources */,
+				A8C2A62A243B2638009E489F /* LoginScreenState.swift in Sources */,
+				A8C2A5FE243AF242009E489F /* Screen.swift in Sources */,
+				A8C2A660243F8209009E489F /* ForgotPasswordScreenBuilder.swift in Sources */,
+				A8C2A5EE243AF075009E489F /* Actions.swift in Sources */,
+				A8C2A60D243AF2D5009E489F /* KeychainConfiguration.swift in Sources */,
+				A8C2A5FF243AF242009E489F /* NavigationScreenReducer.swift in Sources */,
+				A8C2A5F0243AF087009E489F /* RootState.swift in Sources */,
+				A8C2A638243CAA84009E489F /* DashboardScreenBuilder.swift in Sources */,
+				A8C2A656243EF981009E489F /* SignupScreenViewController.swift in Sources */,
+				A8C2A636243CAA75009E489F /* DashboardScreenAction.swift in Sources */,
+				A8C2A65E243F8209009E489F /* ForgotPasswordScreenState.swift in Sources */,
+				A8C2A601243AF242009E489F /* NavigationScreenAction.swift in Sources */,
+				A8C2A60F243AF2D5009E489F /* KeychainService.swift in Sources */,
+				A8C2A5F5243AF1FC009E489F /* GuiState.swift in Sources */,
+				A8C2A5FD243AF242009E489F /* NavigationScreenViewController.swift in Sources */,
+				A8C2A5EA243AF048009E489F /* Store.swift in Sources */,
+				A8C2A63C243CAD12009E489F /* DashboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8C2A5D5243AF022009E489F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C2A5DE243AF022009E489F /* Redux_VMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8C2A5DB243AF022009E489F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8C2A5C2243AF016009E489F /* Redux+VM */;
+			targetProxy = A8C2A5DA243AF022009E489F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A8C2A5D1243AF022009E489F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8C2A5D2243AF022009E489F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A8C2A620243B09C0009E489F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8C2A621243B09C0009E489F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8C2A5E0243AF022009E489F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8C2A5E1243AF022009E489F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8C2A5E3243AF022009E489F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K42ACWEWTR;
+				INFOPLIST_FILE = "Redux+VM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joy.Redux-VM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8C2A5E4243AF022009E489F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K42ACWEWTR;
+				INFOPLIST_FILE = "Redux+VM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joy.Redux-VM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A8C2A5E6243AF022009E489F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K42ACWEWTR;
+				INFOPLIST_FILE = "Redux+VMTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joy.Redux-VMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Redux+VM.app/Redux+VM";
+			};
+			name = Debug;
+		};
+		A8C2A5E7243AF022009E489F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K42ACWEWTR;
+				INFOPLIST_FILE = "Redux+VMTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joy.Redux-VMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Redux+VM.app/Redux+VM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8C2A5BE243AF015009E489F /* Build configuration list for PBXProject "Redux+VM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8C2A5E0243AF022009E489F /* Debug */,
+				A8C2A5E1243AF022009E489F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8C2A5E2243AF022009E489F /* Build configuration list for PBXNativeTarget "Redux+VM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8C2A5E3243AF022009E489F /* Debug */,
+				A8C2A5E4243AF022009E489F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8C2A5E5243AF022009E489F /* Build configuration list for PBXNativeTarget "Redux+VMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8C2A5E6243AF022009E489F /* Debug */,
+				A8C2A5E7243AF022009E489F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A8C2A62D243C953B009E489F /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A8C2A62E243C953B009E489F /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8C2A62D243C953B009E489F /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A8C2A5BB243AF015009E489F /* Project object */;
+}

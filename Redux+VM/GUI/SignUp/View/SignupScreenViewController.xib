@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignupScreenViewController" customModule="Redux_VM" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSubmit" destination="k8v-j7-fbd" id="5AQ-95-DcU"/>
+                <outlet property="txtConfirmPassword" destination="juy-qS-y38" id="qXG-2U-avo"/>
+                <outlet property="txtPassword" destination="RbO-Xd-TNY" id="Vsy-N1-2ZJ"/>
+                <outlet property="txtUsername" destination="BfD-lx-Nwy" id="PaO-Ny-EDx"/>
+                <outlet property="view" destination="oO1-QN-vhL" id="BGb-PM-bcF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="oO1-QN-vhL">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SignUp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1k-as-Wju">
+                    <rect key="frame" x="113" y="80" width="149.5" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="yUW-T9-lbu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="45"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="38.5" translatesAutoresizingMaskIntoConstraints="NO" id="wY0-bt-bF7">
+                    <rect key="frame" x="34.5" y="195" width="306" height="197"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lkO-bi-tRo">
+                            <rect key="frame" x="0.0" y="0.0" width="306" height="40"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BfD-lx-Nwy">
+                                    <rect key="frame" x="0.0" y="0.0" width="306" height="40"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="BfD-lx-Nwy" firstAttribute="leading" secondItem="lkO-bi-tRo" secondAttribute="leading" id="0aM-RV-V5f"/>
+                                <constraint firstItem="BfD-lx-Nwy" firstAttribute="top" secondItem="lkO-bi-tRo" secondAttribute="top" id="CC7-hV-cL5"/>
+                                <constraint firstAttribute="width" constant="306" id="TTl-my-m1K"/>
+                                <constraint firstAttribute="trailing" secondItem="BfD-lx-Nwy" secondAttribute="trailing" id="cYo-4B-sDd"/>
+                                <constraint firstAttribute="height" constant="40" id="cu2-Uc-j8b"/>
+                                <constraint firstAttribute="bottom" secondItem="BfD-lx-Nwy" secondAttribute="bottom" id="y6p-LU-XxH"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UWT-kx-qSa">
+                            <rect key="frame" x="0.0" y="78.5" width="306" height="40"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RbO-Xd-TNY">
+                                    <rect key="frame" x="0.0" y="0.0" width="306" height="40"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="4OX-Qg-vYd"/>
+                                <constraint firstAttribute="width" constant="306" id="57T-JW-YOB"/>
+                                <constraint firstItem="RbO-Xd-TNY" firstAttribute="top" secondItem="UWT-kx-qSa" secondAttribute="top" id="6Ve-yq-WJ6"/>
+                                <constraint firstAttribute="trailing" secondItem="RbO-Xd-TNY" secondAttribute="trailing" id="A5g-WD-i8t"/>
+                                <constraint firstItem="RbO-Xd-TNY" firstAttribute="leading" secondItem="UWT-kx-qSa" secondAttribute="leading" id="Ii7-kM-tbB"/>
+                                <constraint firstAttribute="bottom" secondItem="RbO-Xd-TNY" secondAttribute="bottom" id="U9L-yh-QFu"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9IL-t2-GCy">
+                            <rect key="frame" x="0.0" y="157" width="306" height="40"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" placeholder="Confirm Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="juy-qS-y38">
+                                    <rect key="frame" x="0.0" y="0.0" width="306" height="40"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="juy-qS-y38" secondAttribute="trailing" id="4TM-or-xAX"/>
+                                <constraint firstItem="juy-qS-y38" firstAttribute="leading" secondItem="9IL-t2-GCy" secondAttribute="leading" id="522-za-iSB"/>
+                                <constraint firstItem="juy-qS-y38" firstAttribute="top" secondItem="9IL-t2-GCy" secondAttribute="top" id="7np-sL-f8G"/>
+                                <constraint firstAttribute="height" constant="40" id="8qL-vS-83a"/>
+                                <constraint firstAttribute="bottom" secondItem="juy-qS-y38" secondAttribute="bottom" id="nRI-zh-Krn"/>
+                                <constraint firstAttribute="width" constant="306" id="oyX-NB-hjN"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8v-j7-fbd">
+                    <rect key="frame" x="150.5" y="404.5" width="74" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Bcg-jd-0sO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Submit"/>
+                    <connections>
+                        <action selector="submitTapped:" destination="-1" eventType="touchUpInside" id="7Hh-VZ-Tsf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HY9-k4-qee">
+                    <rect key="frame" x="16" y="20" width="53" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="3JK-Vb-5RE"/>
+                        <constraint firstAttribute="width" constant="53" id="xb5-12-gjI"/>
+                    </constraints>
+                    <state key="normal" image="chevron.left" catalog="system"/>
+                    <connections>
+                        <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="SrN-JD-fIJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wY0-bt-bF7" firstAttribute="centerY" secondItem="oO1-QN-vhL" secondAttribute="centerY" constant="-40" id="9k0-qS-TDV"/>
+                <constraint firstItem="HY9-k4-qee" firstAttribute="top" secondItem="Ue4-Jt-Cj3" secondAttribute="top" constant="20" id="AU8-E3-fif"/>
+                <constraint firstItem="k8v-j7-fbd" firstAttribute="centerX" secondItem="Ue4-Jt-Cj3" secondAttribute="centerX" id="W07-kS-eRF"/>
+                <constraint firstItem="Y1k-as-Wju" firstAttribute="top" secondItem="Ue4-Jt-Cj3" secondAttribute="top" constant="80" id="eNg-Ps-btP"/>
+                <constraint firstItem="Y1k-as-Wju" firstAttribute="centerX" secondItem="Ue4-Jt-Cj3" secondAttribute="centerX" id="k1m-fz-4yW"/>
+                <constraint firstItem="k8v-j7-fbd" firstAttribute="top" secondItem="wY0-bt-bF7" secondAttribute="bottom" constant="12.5" id="pKp-qq-eRZ"/>
+                <constraint firstItem="wY0-bt-bF7" firstAttribute="centerX" secondItem="Ue4-Jt-Cj3" secondAttribute="centerX" id="xWe-kw-gum"/>
+                <constraint firstItem="HY9-k4-qee" firstAttribute="leading" secondItem="Ue4-Jt-Cj3" secondAttribute="leading" constant="16" id="yD4-lE-P3a"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Ue4-Jt-Cj3"/>
+            <point key="canvasLocation" x="132.66331658291458" y="116.54676258992806"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.left" catalog="system" width="48" height="64"/>
+    </resources>
+</document>
