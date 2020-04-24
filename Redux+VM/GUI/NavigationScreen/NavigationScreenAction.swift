@@ -9,11 +9,11 @@
 import Foundation
 enum NavigationScreenAction: Action {
     case switchScreen(screen: Screen, presentation: NavigationPresentation)
+    case popScreen(toScreen: Screen?)
 }
 
 enum NavigationPresentation {
     case push(animate: Bool)
     case present(animate: Bool)
-    case pop(animate: Bool)
     case replace
 }

@@ -86,6 +86,9 @@
 		A8C2A6642444247F009E489F /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A6622444247F009E489F /* ForgotPasswordViewController.swift */; };
 		A8C2A6652444247F009E489F /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C2A6632444247F009E489F /* ForgotPasswordViewController.xib */; };
 		A8C2A668244424AF009E489F /* ForgotPasswordScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A667244424AF009E489F /* ForgotPasswordScreenViewModel.swift */; };
+		A8E97B272452E8750067BDFF /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E97B262452E8750067BDFF /* NewsDetailsViewController.swift */; };
+		A8E97B292452EA220067BDFF /* NewsDetailsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E97B282452EA220067BDFF /* NewsDetailsBuilder.swift */; };
+		A8E97B2B2452EC920067BDFF /* NewsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E97B2A2452EC920067BDFF /* NewsDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +182,9 @@
 		A8C2A6622444247F009E489F /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		A8C2A6632444247F009E489F /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
 		A8C2A667244424AF009E489F /* ForgotPasswordScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordScreenViewModel.swift; sourceTree = "<group>"; };
+		A8E97B262452E8750067BDFF /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
+		A8E97B282452EA220067BDFF /* NewsDetailsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsBuilder.swift; sourceTree = "<group>"; };
+		A8E97B2A2452EC920067BDFF /* NewsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -357,6 +363,7 @@
 		A8C2A5F1243AF1F2009E489F /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				A8E97B252452E8370067BDFF /* NewsDetails */,
 				A8274BD02451AC9900630329 /* ThirdPartyControls */,
 				A8274BCB2451A7B700630329 /* Receipts */,
 				A8274BC2245170C200630329 /* Menu */,
@@ -527,6 +534,16 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		A8E97B252452E8370067BDFF /* NewsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				A8E97B262452E8750067BDFF /* NewsDetailsViewController.swift */,
+				A8E97B282452EA220067BDFF /* NewsDetailsBuilder.swift */,
+				A8E97B2A2452EC920067BDFF /* NewsDetailsViewModel.swift */,
+			);
+			path = NewsDetails;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -680,6 +697,7 @@
 				A8C2A64F243D9CE2009E489F /* SignupScreenState.swift in Sources */,
 				A8C2A624243B1FE9009E489F /* SignupScreenBuilder.swift in Sources */,
 				A8274BC12451682700630329 /* DLHamburguerContainerViewController.swift in Sources */,
+				A8E97B2B2452EC920067BDFF /* NewsDetailsViewModel.swift in Sources */,
 				A8C2A65D243F8208009E489F /* ForgotPasswordScreenReducer.swift in Sources */,
 				A8C2A62A243B2638009E489F /* LoginScreenState.swift in Sources */,
 				A8C2A5FE243AF242009E489F /* Screen.swift in Sources */,
@@ -694,6 +712,7 @@
 				A8C2A656243EF981009E489F /* SignupScreenViewController.swift in Sources */,
 				A8C2A636243CAA75009E489F /* DashboardScreenAction.swift in Sources */,
 				A8C2A65E243F8209009E489F /* ForgotPasswordScreenState.swift in Sources */,
+				A8E97B272452E8750067BDFF /* NewsDetailsViewController.swift in Sources */,
 				A8274BBF2451682700630329 /* DLHamburguerViewController.swift in Sources */,
 				A8C2A601243AF242009E489F /* NavigationScreenAction.swift in Sources */,
 				A8274BCD2451A7E200630329 /* ReceiptScreenBuilder.swift in Sources */,
@@ -701,6 +720,7 @@
 				A8C2A5F5243AF1FC009E489F /* GuiState.swift in Sources */,
 				A8274BE42452A96C00630329 /* MenuViewController.swift in Sources */,
 				A8C2A5FD243AF242009E489F /* NavigationScreenViewController.swift in Sources */,
+				A8E97B292452EA220067BDFF /* NewsDetailsBuilder.swift in Sources */,
 				A87F03CE2452BE0C00C50ACC /* APIConstants.swift in Sources */,
 				A8274BE12452A42900630329 /* MenuScreenViewModel.swift in Sources */,
 				A8C2A5EA243AF048009E489F /* Store.swift in Sources */,

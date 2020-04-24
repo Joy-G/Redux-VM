@@ -81,6 +81,10 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
         cell.detailTextLabel?.text = data?.author
        return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.cellTapped(at: indexPath.row)
+    }
 
 }
 

@@ -13,6 +13,7 @@ class NavigationScreenViewController: DLHamburguerViewController, StoreObserver 
     private let dependencies: Dependencies
     private var currentSubviewController: UIViewController?
     private var currentSubScreen: Screen?
+    private var arrNavigationScreens = [Screen]()
 
 
     @available(*, unavailable)
@@ -33,7 +34,9 @@ class NavigationScreenViewController: DLHamburguerViewController, StoreObserver 
     }
     func update(store: Store) {
         let navigationState = store.state.gui.navigationScreen
-        if currentSubScreen == nil || currentSubScreen != navigationState.currentScreen {
+        if navigationState.isPop {
+           handlePop(store: store)
+        } else if currentSubScreen == nil || currentSubScreen != navigationState.currentScreen {
             handlePresentation(state: navigationState)
         }
     }
@@ -45,18 +48,11 @@ class NavigationScreenViewController: DLHamburguerViewController, StoreObserver 
         case .push(let animate):
            let controller = getController(forNavigationState: state)
            self.navigationController?.pushViewController(controller, animated: animate, completion: { [weak self] in
+                self?.arrNavigationScreens.append(state.currentScreen)
                 self?.currentSubScreen = state.currentScreen
             })
         case .present(let animate):
             self.navigationController?.present(getController(forNavigationState: state), animated: animate)
-        case .pop(let animate):
-            if let viewControllers = self.navigationController?.viewControllers {
-                let index = (viewControllers.count - 1 - 1) > 0 ? (viewControllers.count - 1 - 1) : 0
-                let controller = viewControllers[index]
-                self.navigationController?.popToViewController(controller, animated: animate, completion: { [weak self] in
-                    self?.currentSubScreen = state.currentScreen
-                })
-            }
         case .replace:
             replace(navigationState: state)
         }
@@ -72,20 +68,26 @@ class NavigationScreenViewController: DLHamburguerViewController, StoreObserver 
             }
             let newViewController = getController(forNavigationState: navigationState)
             self.contentViewController = newViewController
-//            addChild(newViewController)
-//            view.addSubview(newViewController.view)
-//            newViewController.view.translatesAutoresizingMaskIntoConstraints = false
-//            newViewController.view.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
-//            newViewController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
-//            newViewController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
-//            newViewController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
-//
-//            newViewController.didMove(toParent: self)
-
+            arrNavigationScreens.removeAll()
+            arrNavigationScreens.append(navigationState.currentScreen)
             currentSubviewController = newViewController
-            
             currentSubScreen = navigationState.currentScreen
         }
+    }
+    
+    private func handlePop(store: Store) {
+        if self.arrNavigationScreens.count > 1 {
+            if let viewControllers = self.navigationController?.viewControllers {
+               let index = (viewControllers.count - 1 - 1) > 0 ? (viewControllers.count - 1 - 1) : 0
+               let controller = viewControllers[index]
+               let currentScreen = self.arrNavigationScreens[index]
+               self.arrNavigationScreens.removeLast()
+               self.navigationController?.popToViewController(controller, animated: true, completion: { [weak self] in
+                    self?.currentSubScreen = currentScreen
+                    store.dispatch(action: NavigationScreenAction.switchScreen(screen: currentScreen, presentation: .replace))
+               })
+           }
+       }
     }
     
     private func getController(forNavigationState navigationState: NavigationScreenState) -> UIViewController {
@@ -101,6 +103,8 @@ class NavigationScreenViewController: DLHamburguerViewController, StoreObserver 
             return DashboardScreenBuilder().main(dependencies: self.dependencies)
         case .receipts:
             return ReceiptScreenBuilder().main(dependencies: dependencies)
+        case .newsDetails:
+            return NewsDetailsBuilder().main(dependencies: dependencies)
         }
 
         }() as UIViewController

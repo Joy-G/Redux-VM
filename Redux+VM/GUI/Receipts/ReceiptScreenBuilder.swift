@@ -11,8 +11,7 @@ import UIKit
 
 struct ReceiptScreenBuilder {
     func main(dependencies: Dependencies) -> UIViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller =  storyboard.instantiateViewController(withIdentifier: "Receipts")
+        let controller = ReceiptsScreenViewController.instantiate(fromAppStoryboard: .Main)
         return controller
     }
 }

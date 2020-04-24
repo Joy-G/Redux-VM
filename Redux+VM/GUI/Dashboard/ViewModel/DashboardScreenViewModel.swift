@@ -37,14 +37,18 @@ class DashboardScreenViewModel {
         return nil
     }
     
+    func cellTapped(at index: Int) {
+        store.dispatch(action: NavigationScreenAction.switchScreen(screen: .newsDetails, presentation: .push(animate: true)))
+    }
+    
     
     func fetchNews() {
         store.dispatch(action: DashboardScreenAction.fetchingNews)
         ServiceManager.sharedInstance.fetchArticle {[weak self] (news, error) in
             if error == nil {
                 self?.dataStore?.dashboardData = news
-                self?.store.dispatch(action: DashboardScreenAction.reload)
             }
+            self?.store.dispatch(action: DashboardScreenAction.reload)
         }
     }
     

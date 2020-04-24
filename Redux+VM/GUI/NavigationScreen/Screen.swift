@@ -13,4 +13,5 @@ enum Screen {
     case forgotpasswordScreen
     case dashboardScreen
     case receipts
+    case newsDetails
 }

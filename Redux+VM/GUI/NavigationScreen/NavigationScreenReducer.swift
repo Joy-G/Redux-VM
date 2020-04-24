@@ -14,6 +14,10 @@ struct NavigationScreenReducer {
         switch action {
         case .switchScreen(let screen, let presentation):
             state =  NavigationScreenState(currentScreen: screen, presentation: presentation)
+        case .popScreen(let screen):
+            state = NavigationScreenState(currentScreen: state.currentScreen, presentation: .replace)
+            state.isPop = true
+            state.popToScreen = screen
         }
         return state
     }
