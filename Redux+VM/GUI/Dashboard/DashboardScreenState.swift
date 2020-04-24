@@ -15,6 +15,8 @@ struct DashboardScreenState: Equatable {
 enum DashboardState: Equatable {
     case empty
     case signout
+    case fetchingDataInProgress
+    case fetched
 }
 
 extension DashboardScreenState {

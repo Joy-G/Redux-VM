@@ -7,160 +7,208 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5ABE48D4-EA38-4C43-8418-365FAF21C46D"
+            uuid = "1F50B38C-40AA-44B5-9F6E-D4A9C08C4382"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Redux+VM/GUI/LoginScreen/ViewModel/LoginScreenViewModel.swift"
+            filePath = "Redux+VM/GUI/Dashboard/ViewModel/DashboardScreenViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "gotoSignUp()"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "fetchNews()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1F50B38C-40AA-44B5-9F6E-D4A9C08C4382 - 9ba3c55e5d77ec95"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Redux_VM.DashboardScreenViewModel.fetchNews() -&gt; ()"
+                  moduleName = "Redux+VM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joy/Documents/Github/Redux-VM/Redux+VM/GUI/Dashboard/ViewModel/DashboardScreenViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "115">
+               </Location>
+               <Location
+                  uuid = "1F50B38C-40AA-44B5-9F6E-D4A9C08C4382 - bb844326484e1485"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Redux_VM.News&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Redux_VM.DashboardScreenViewModel.fetchNews() -&gt; ()"
+                  moduleName = "Redux+VM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joy/Documents/Github/Redux-VM/Redux+VM/GUI/Dashboard/ViewModel/DashboardScreenViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "151">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D9645A5-F96F-4D54-8BF0-85D865B046B5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Redux+VM/Networking/DataModel/Article.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "newJSONDecoder()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF38E957-F638-4F28-A8B8-DC099BC5B5B8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Redux+VM/Networking/ServiceManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "fetchArticle(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1A7181A8-E722-47B3-8329-E4C384EB38F2"
+            uuid = "304B5DA4-5387-483C-8586-18137578E145"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Redux+VM/GUI/NavigationScreen/NavigationScreenViewController.swift"
+            filePath = "Redux+VM/GUI/Dashboard/ViewModel/DashboardScreenViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "update(store:)"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "fetchNews()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A908B023-54EC-460F-938A-F7564E3F03F6"
+            uuid = "6DBC4CB2-C32E-4955-9D45-43919B3A009B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Redux+VM/GUI/NavigationScreen/NavigationScreenViewController.swift"
+            filePath = "Redux+VM/GUI/Dashboard/ViewModel/DashboardScreenViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "getController(forNavigationState:)"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "fetchNews()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "379F9DA6-A887-40A1-A346-1B3242F5B188"
+            uuid = "E46DE4A4-5A5C-4691-9793-4A076958D3D6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Redux+VM/GUI/SignUp/ViewModel/SignupScreenViewModel.swift"
+            filePath = "Redux+VMTests/ServiceManagerTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "gotoLogin()"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "testNews()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8AFBF90C-416D-4CBF-8AA7-18268C1FCE45"
+            uuid = "D610E402-17EE-4FD4-AB1F-B209C17C4541"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Redux+VM/GUI/SignUp/View/SignupScreenViewController.swift"
+            filePath = "Redux+VMTests/MockServiceManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "viewWillDisappear(_:)"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "fetchArticle(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "866EFC50-44CA-4188-8080-6E41D3FBF2A0"
+            uuid = "D831E0E9-8D53-4C27-869C-8E82F1BE4B9B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Redux+VM/GUI/NavigationScreen/NavigationScreenViewController.swift"
+            filePath = "Redux+VMTests/MockServiceManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "update(store:)"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "fetchArticle(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D2546F4B-7C6D-4392-8EC2-FF9B4646C826"
+            uuid = "402A4EFE-5DC9-4B06-8BFB-BFCA11D72D37"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Redux+VM/GUI/SignUp/View/SignupScreenViewController.swift"
+            filePath = "Redux+VMTests/MockServiceManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "backButtonTapped(_:)"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "fetchArticle(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D440383C-66BF-48EC-B9E7-FC2958EE1921"
+            uuid = "6DE0700F-8479-4640-A5DC-1B04C0DADC8A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Redux+VM/GUI/NavigationScreen/NavigationScreenViewController.swift"
+            filePath = "Redux+VM/GUI/Dashboard/View/DashboardViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "update(store:)"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "update(state:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3B91A209-A339-4A51-AD1D-403D6B2BA14A"
+            uuid = "9869274B-C03F-4F5F-B5B5-E79B55434F88"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Redux+VM/GUI/NavigationScreen/NavigationScreenViewController.swift"
+            filePath = "Redux+VM/GUI/Dashboard/View/DashboardViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "handlePresentation(state:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8379A8E4-504B-4D25-854B-8BBE0E87BD57"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Redux+VM/GUI/NavigationScreen/NavigationScreenViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "handlePresentation(state:)"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "updateUI(state:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

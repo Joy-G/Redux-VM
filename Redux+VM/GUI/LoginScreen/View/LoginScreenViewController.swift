@@ -59,7 +59,6 @@ class LoginScreenViewController: UIViewController, NVActivityIndicatorViewable {
     }
     
     private func updateUI(state: LoginScreenState) {
-        print("\(state.loginState)")
         switch state.loginState {
         case .empty:
             resetUI()

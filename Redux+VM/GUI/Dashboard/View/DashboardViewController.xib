@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DashboardViewController" customModule="Redux_VM" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="TJw-d3-bhz" id="3qT-Nm-8m8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,21 +18,62 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVP-Cd-72F">
-                    <rect key="frame" x="177" y="433" width="60" height="30"/>
-                    <state key="normal" title="Sign Out"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVP-Cd-72F" userLabel="Open Menu">
+                    <rect key="frame" x="20" y="52" width="21" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="21" id="eLE-wE-9oA"/>
+                        <constraint firstAttribute="height" constant="22" id="ejg-Kd-CRS"/>
+                    </constraints>
+                    <state key="normal" image="list.dash" catalog="system"/>
                     <connections>
-                        <action selector="signOut:" destination="-1" eventType="touchUpInside" id="UF4-pl-B7s"/>
+                        <action selector="gotoDetails:" destination="-1" eventType="touchUpInside" id="KCG-de-Bxt"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GdC-Su-Res">
+                    <rect key="frame" x="374" y="52" width="20" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="vWY-5q-XyG"/>
+                        <constraint firstAttribute="width" constant="20" id="wht-3a-D1g"/>
+                    </constraints>
+                    <state key="normal" image="power" catalog="system"/>
+                    <connections>
+                        <action selector="signOut:" destination="-1" eventType="touchUpInside" id="S74-xO-l93"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dashboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbM-RH-tUR">
+                    <rect key="frame" x="150" y="433.5" width="114" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TJw-d3-bhz">
+                    <rect key="frame" x="20" y="104" width="374" height="758"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="k00-kq-yUz"/>
+                        <outlet property="delegate" destination="-1" id="yMI-Dn-ruG"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="sVP-Cd-72F" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IRn-oW-Jef"/>
-                <constraint firstItem="sVP-Cd-72F" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="dMk-PP-mfU"/>
+                <constraint firstItem="QbM-RH-tUR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="8i6-MM-gnq"/>
+                <constraint firstItem="TJw-d3-bhz" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="HlR-63-cqm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TJw-d3-bhz" secondAttribute="trailing" constant="20" id="Lcf-d1-puy"/>
+                <constraint firstItem="TJw-d3-bhz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="MFw-6C-iz4"/>
+                <constraint firstItem="GdC-Su-Res" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="MGZ-C4-sJ4"/>
+                <constraint firstItem="sVP-Cd-72F" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="Mv2-Qs-g67"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GdC-Su-Res" secondAttribute="trailing" constant="20" id="YSC-l6-T3d"/>
+                <constraint firstItem="QbM-RH-tUR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hHh-pL-gfi"/>
+                <constraint firstItem="TJw-d3-bhz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="mhy-17-G4g"/>
+                <constraint firstItem="sVP-Cd-72F" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="noa-SJ-jo8"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="139" y="84"/>
+            <point key="canvasLocation" x="137.68115942028987" y="83.705357142857139"/>
         </view>
     </objects>
+    <resources>
+        <image name="list.dash" catalog="system" width="64" height="42"/>
+        <image name="power" catalog="system" width="64" height="62"/>
+    </resources>
 </document>

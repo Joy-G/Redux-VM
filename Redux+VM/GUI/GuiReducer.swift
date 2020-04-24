@@ -12,6 +12,8 @@ struct GuiReducer {
         return GuiState(navigationScreen: NavigationScreenReducer.reduce(state: state?.navigationScreen, action: action),
                         loginScreen: LoginScreenReducer.reduce(state: state?.loginScreen, action: action),
                         signupScreen: SignupScreenReducer.reduce(state: state?.signupScreen, action: action),
-                        forgotpasswordScreen: ForgotPasswordScreenReducer.reduce(state: state?.forgotpasswordScreen, action: action))
+                        forgotpasswordScreen: ForgotPasswordScreenReducer.reduce(state: state?.forgotpasswordScreen, action: action),
+                        menuScreen: MenuScreenReducer.reduce(state: state?.menuScreen, action: action),
+                        dashboardScreen: DashboardScreenReducer.reduce(state: state?.dashboardScreen, action: action))
     }
 }

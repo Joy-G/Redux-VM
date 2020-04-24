@@ -7,14 +7,18 @@
 //
 
 import Foundation
-
+struct ForgotPasswordDataModel {
+    let username: String
+}
 class ForgotPasswordScreenViewModel {
     private let store: Store
+    private let dataStore: DataStore
     private var currentState: ForgotPasswordScreenState?
     weak var view: ForgotPasswordView?
     
     init(dependencies: Dependencies) {
         store = dependencies.store
+        dataStore = dependencies.dataStore
         store.subscribe(observer: self)
     }
     // MARK: - View functions
@@ -37,8 +41,9 @@ class ForgotPasswordScreenViewModel {
     }
     
     func validate(username: String) {
-           // if local validation is passed
-           store.dispatch(action: ForgotPasswordScreenAction.localValidation(isSuccess: true)) // else false
+        dataStore.forgotPasswordData = ForgotPasswordDataModel(username: username)
+        // if local validation is passed
+        store.dispatch(action: ForgotPasswordScreenAction.localValidation(isSuccess: true)) // else false
     }
     
     func callAPIForgotPassword(withState currentState: ForgotPasswordScreenState) {

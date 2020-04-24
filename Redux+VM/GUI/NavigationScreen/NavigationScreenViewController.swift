@@ -8,11 +8,12 @@
 
 import UIKit
 
-class NavigationScreenViewController: UIViewController, StoreObserver {
+class NavigationScreenViewController: DLHamburguerViewController, StoreObserver {
 
     private let dependencies: Dependencies
     private var currentSubviewController: UIViewController?
     private var currentSubScreen: Screen?
+
 
     @available(*, unavailable)
     required init?(coder aDecoder: NSCoder) {
@@ -22,6 +23,9 @@ class NavigationScreenViewController: UIViewController, StoreObserver {
     init(dependencies: Dependencies) {
         self.dependencies = dependencies
         super.init(nibName: String(describing: NavigationScreenViewController.self), bundle: Bundle.main)
+        self.contentViewController = UIViewController()
+        self.menuViewController = MenuScreenBuilder().main(dependencies: dependencies)
+        
     }
     override func viewDidLoad() {
         self.dependencies.store.subscribe(observer: self)
@@ -31,7 +35,6 @@ class NavigationScreenViewController: UIViewController, StoreObserver {
         let navigationState = store.state.gui.navigationScreen
         if currentSubScreen == nil || currentSubScreen != navigationState.currentScreen {
             handlePresentation(state: navigationState)
-            currentSubScreen = navigationState.currentScreen
         }
     }
 
@@ -40,13 +43,19 @@ class NavigationScreenViewController: UIViewController, StoreObserver {
                 
         switch navigationPresentation {
         case .push(let animate):
-            self.navigationController?.pushViewController(getController(forNavigationState: state), animated: animate)
+           let controller = getController(forNavigationState: state)
+           self.navigationController?.pushViewController(controller, animated: animate, completion: { [weak self] in
+                self?.currentSubScreen = state.currentScreen
+            })
         case .present(let animate):
             self.navigationController?.present(getController(forNavigationState: state), animated: animate)
         case .pop(let animate):
             if let viewControllers = self.navigationController?.viewControllers {
                 let index = (viewControllers.count - 1 - 1) > 0 ? (viewControllers.count - 1 - 1) : 0
-                self.navigationController?.popToViewController(viewControllers[index], animated: animate)
+                let controller = viewControllers[index]
+                self.navigationController?.popToViewController(controller, animated: animate, completion: { [weak self] in
+                    self?.currentSubScreen = state.currentScreen
+                })
             }
         case .replace:
             replace(navigationState: state)
@@ -55,22 +64,23 @@ class NavigationScreenViewController: UIViewController, StoreObserver {
     
     private func replace(navigationState: NavigationScreenState) {
         if currentSubScreen == nil || currentSubScreen != navigationState.currentScreen {
-            
+            self.navigationController?.popToRootViewController(animated: false)
             if let currentSubviewController = currentSubviewController {
                 currentSubviewController.willMove(toParent: nil)
                 currentSubviewController.view.removeFromSuperview()
                 currentSubviewController.removeFromParent()
             }
             let newViewController = getController(forNavigationState: navigationState)
-            addChild(newViewController)
-            view.addSubview(newViewController.view)
-            newViewController.view.translatesAutoresizingMaskIntoConstraints = false
-            newViewController.view.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
-            newViewController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
-            newViewController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
-            newViewController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
-
-            newViewController.didMove(toParent: self)
+            self.contentViewController = newViewController
+//            addChild(newViewController)
+//            view.addSubview(newViewController.view)
+//            newViewController.view.translatesAutoresizingMaskIntoConstraints = false
+//            newViewController.view.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+//            newViewController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
+//            newViewController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
+//            newViewController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
+//
+//            newViewController.didMove(toParent: self)
 
             currentSubviewController = newViewController
             
@@ -89,6 +99,8 @@ class NavigationScreenViewController: UIViewController, StoreObserver {
             return ForgotPasswordScreenBuilder().main(dependencies: self.dependencies)
         case .dashboardScreen:
             return DashboardScreenBuilder().main(dependencies: self.dependencies)
+        case .receipts:
+            return ReceiptScreenBuilder().main(dependencies: dependencies)
         }
 
         }() as UIViewController

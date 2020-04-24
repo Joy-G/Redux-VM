@@ -7,6 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8274BBB2451537D00630329 /* NavigationController+CompletionBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8274BBA2451537C00630329 /* NavigationController+CompletionBlock.swift */; };
+		A8274BBF2451682700630329 /* DLHamburguerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8274BBC2451682700630329 /* DLHamburguerViewController.swift */; };
+		A8274BC02451682700630329 /* DLHamburguerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8274BBD2451682700630329 /* DLHamburguerNavigationController.swift */; };
+		A8274BC12451682700630329 /* DLHamburguerContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8274BBE2451682700630329 /* DLHamburguerContainerViewController.swift */; };
+		A8274BC6245170E300630329 /* DLDemoMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8274BC3245170E200630329 /* DLDemoMenuViewController.swift */; };
+		A8274BCD2451A7E200630329 /* ReceiptScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8274BCC2451A7E200630329 /* ReceiptScreenBuilder.swift */; };
+		A8274BCF2451AAB500630329 /* ReceiptsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8274BCE2451AAB500630329 /* ReceiptsScreenViewController.swift */; };
+		A8274BD42451B2DD00630329 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A8274BD32451B2DD00630329 /* Alamofire */; };
+		A8274BD92452A23900630329 /* MenuScreenReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8274BD52452A23800630329 /* MenuScreenReducer.swift */; };
+		A8274BDA2452A23900630329 /* MenuScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8274BD62452A23900630329 /* MenuScreenBuilder.swift */; };
+		A8274BDB2452A23900630329 /* MenuScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8274BD72452A23900630329 /* MenuScreenState.swift */; };
+		A8274BDC2452A23900630329 /* MenuScreenAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8274BD82452A23900630329 /* MenuScreenAction.swift */; };
+		A8274BDE2452A36000630329 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8274BDD2452A36000630329 /* AppStoryboard.swift */; };
+		A8274BE12452A42900630329 /* MenuScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8274BE02452A42900630329 /* MenuScreenViewModel.swift */; };
+		A8274BE42452A96C00630329 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8274BE32452A96C00630329 /* MenuViewController.swift */; };
+		A83ECA32244DD2C600E82EAA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A83ECA31244DD2C600E82EAA /* Settings.bundle */; };
+		A83ECA34244EC90700E82EAA /* SignupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83ECA33244EC90700E82EAA /* SignupTests.swift */; };
+		A83ECA36244ED1FA00E82EAA /* ForgotPasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83ECA35244ED1FA00E82EAA /* ForgotPasswordTests.swift */; };
+		A87F03C72452B75800C50ACC /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F03C62452B75800C50ACC /* ServiceManager.swift */; };
+		A87F03C92452B77800C50ACC /* ServiceManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F03C82452B77800C50ACC /* ServiceManagerProtocol.swift */; };
+		A87F03CC2452B98500C50ACC /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F03CB2452B98500C50ACC /* Article.swift */; };
+		A87F03CE2452BE0C00C50ACC /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F03CD2452BE0C00C50ACC /* APIConstants.swift */; };
+		A87F03D12452C80400C50ACC /* News.json in Resources */ = {isa = PBXBuildFile; fileRef = A87F03D02452C80400C50ACC /* News.json */; };
+		A87F03D32452C85300C50ACC /* ServiceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F03D22452C85300C50ACC /* ServiceManagerTests.swift */; };
+		A87F03D52452C8AB00C50ACC /* MockServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F03D42452C8AB00C50ACC /* MockServiceManager.swift */; };
+		A87F03D62452CE0600C50ACC /* News.json in Resources */ = {isa = PBXBuildFile; fileRef = A87F03D02452C80400C50ACC /* News.json */; };
 		A8C2A5C7243AF016009E489F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A5C6243AF016009E489F /* AppDelegate.swift */; };
 		A8C2A5CB243AF016009E489F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C2A5CA243AF016009E489F /* ViewController.swift */; };
 		A8C2A5D0243AF022009E489F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8C2A5CF243AF022009E489F /* Assets.xcassets */; };
@@ -73,6 +99,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A8274BBA2451537C00630329 /* NavigationController+CompletionBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavigationController+CompletionBlock.swift"; sourceTree = "<group>"; };
+		A8274BBC2451682700630329 /* DLHamburguerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLHamburguerViewController.swift; sourceTree = "<group>"; };
+		A8274BBD2451682700630329 /* DLHamburguerNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLHamburguerNavigationController.swift; sourceTree = "<group>"; };
+		A8274BBE2451682700630329 /* DLHamburguerContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLHamburguerContainerViewController.swift; sourceTree = "<group>"; };
+		A8274BC3245170E200630329 /* DLDemoMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DLDemoMenuViewController.swift; sourceTree = "<group>"; };
+		A8274BCC2451A7E200630329 /* ReceiptScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptScreenBuilder.swift; sourceTree = "<group>"; };
+		A8274BCE2451AAB500630329 /* ReceiptsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptsScreenViewController.swift; sourceTree = "<group>"; };
+		A8274BD52452A23800630329 /* MenuScreenReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScreenReducer.swift; sourceTree = "<group>"; };
+		A8274BD62452A23900630329 /* MenuScreenBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScreenBuilder.swift; sourceTree = "<group>"; };
+		A8274BD72452A23900630329 /* MenuScreenState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScreenState.swift; sourceTree = "<group>"; };
+		A8274BD82452A23900630329 /* MenuScreenAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScreenAction.swift; sourceTree = "<group>"; };
+		A8274BDD2452A36000630329 /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
+		A8274BE02452A42900630329 /* MenuScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScreenViewModel.swift; sourceTree = "<group>"; };
+		A8274BE32452A96C00630329 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		A83ECA31244DD2C600E82EAA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		A83ECA33244EC90700E82EAA /* SignupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTests.swift; sourceTree = "<group>"; };
+		A83ECA35244ED1FA00E82EAA /* ForgotPasswordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordTests.swift; sourceTree = "<group>"; };
+		A87F03C62452B75800C50ACC /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		A87F03C82452B77800C50ACC /* ServiceManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManagerProtocol.swift; sourceTree = "<group>"; };
+		A87F03CB2452B98500C50ACC /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		A87F03CD2452BE0C00C50ACC /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		A87F03D02452C80400C50ACC /* News.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = News.json; sourceTree = "<group>"; };
+		A87F03D22452C85300C50ACC /* ServiceManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManagerTests.swift; sourceTree = "<group>"; };
+		A87F03D42452C8AB00C50ACC /* MockServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServiceManager.swift; sourceTree = "<group>"; };
 		A8C2A5C3243AF016009E489F /* Redux+VM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Redux+VM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C2A5C6243AF016009E489F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8C2A5CA243AF016009E489F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8C2A62F243C953B009E489F /* NVActivityIndicatorView in Frameworks */,
+				A8274BD42451B2DD00630329 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,9 +201,102 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A8274BB92451532800630329 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A8274BBA2451537C00630329 /* NavigationController+CompletionBlock.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A8274BC2245170C200630329 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				A8274BE22452A90B00630329 /* View */,
+				A8274BDF2452A41400630329 /* ViewModel */,
+				A8274BD82452A23900630329 /* MenuScreenAction.swift */,
+				A8274BD62452A23900630329 /* MenuScreenBuilder.swift */,
+				A8274BD52452A23800630329 /* MenuScreenReducer.swift */,
+				A8274BD72452A23900630329 /* MenuScreenState.swift */,
+				A8274BC3245170E200630329 /* DLDemoMenuViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		A8274BCB2451A7B700630329 /* Receipts */ = {
+			isa = PBXGroup;
+			children = (
+				A8274BCC2451A7E200630329 /* ReceiptScreenBuilder.swift */,
+				A8274BCE2451AAB500630329 /* ReceiptsScreenViewController.swift */,
+			);
+			path = Receipts;
+			sourceTree = "<group>";
+		};
+		A8274BD02451AC9900630329 /* ThirdPartyControls */ = {
+			isa = PBXGroup;
+			children = (
+				A8274BD12451ACAE00630329 /* Menu */,
+			);
+			path = ThirdPartyControls;
+			sourceTree = "<group>";
+		};
+		A8274BD12451ACAE00630329 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				A8274BBE2451682700630329 /* DLHamburguerContainerViewController.swift */,
+				A8274BBD2451682700630329 /* DLHamburguerNavigationController.swift */,
+				A8274BBC2451682700630329 /* DLHamburguerViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		A8274BDF2452A41400630329 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8274BE02452A42900630329 /* MenuScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A8274BE22452A90B00630329 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8274BE32452A96C00630329 /* MenuViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A87F03C32452B5DE00C50ACC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A87F03CA2452B96F00C50ACC /* DataModel */,
+				A87F03C62452B75800C50ACC /* ServiceManager.swift */,
+				A87F03C82452B77800C50ACC /* ServiceManagerProtocol.swift */,
+				A87F03CD2452BE0C00C50ACC /* APIConstants.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A87F03CA2452B96F00C50ACC /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				A87F03CB2452B98500C50ACC /* Article.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		A87F03CF2452C7CA00C50ACC /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				A87F03D02452C80400C50ACC /* News.json */,
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
 		A8C2A5BA243AF015009E489F = {
 			isa = PBXGroup;
 			children = (
+				A83ECA31244DD2C600E82EAA /* Settings.bundle */,
 				A8C2A5C5243AF016009E489F /* Redux+VM */,
 				A8C2A5DC243AF022009E489F /* Redux+VMTests */,
 				A8C2A5C4243AF016009E489F /* Products */,
@@ -172,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				A8C2A603243AF2A8009E489F /* App */,
+				A87F03C32452B5DE00C50ACC /* Networking */,
 				A8C2A5F1243AF1F2009E489F /* GUI */,
 				A8C2A5E8243AF030009E489F /* State */,
 				A8C2A5C6243AF016009E489F /* AppDelegate.swift */,
@@ -187,8 +332,13 @@
 		A8C2A5DC243AF022009E489F /* Redux+VMTests */ = {
 			isa = PBXGroup;
 			children = (
+				A87F03CF2452C7CA00C50ACC /* Stub */,
 				A8C2A5DD243AF022009E489F /* Redux_VMTests.swift */,
+				A83ECA33244EC90700E82EAA /* SignupTests.swift */,
 				A8C2A5DF243AF022009E489F /* Info.plist */,
+				A83ECA35244ED1FA00E82EAA /* ForgotPasswordTests.swift */,
+				A87F03D22452C85300C50ACC /* ServiceManagerTests.swift */,
+				A87F03D42452C8AB00C50ACC /* MockServiceManager.swift */,
 			);
 			path = "Redux+VMTests";
 			sourceTree = "<group>";
@@ -207,6 +357,9 @@
 		A8C2A5F1243AF1F2009E489F /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				A8274BD02451AC9900630329 /* ThirdPartyControls */,
+				A8274BCB2451A7B700630329 /* Receipts */,
+				A8274BC2245170C200630329 /* Menu */,
 				A8C2A658243EF992009E489F /* ForgotPasswordScreen */,
 				A8C2A630243CAA23009E489F /* Dashboard */,
 				A8C2A612243AF649009E489F /* LoginScreen */,
@@ -234,10 +387,12 @@
 		A8C2A603243AF2A8009E489F /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A8274BB92451532800630329 /* Extension */,
 				A8C2A605243AF2D5009E489F /* AppBuilder.swift */,
 				A8C2A60A243AF2D5009E489F /* DefaultConfiguration.swift */,
 				A8C2A606243AF2D5009E489F /* Keychain */,
 				A8C2A604243AF2D5009E489F /* Log.swift */,
+				A8274BDD2452A36000630329 /* AppStoryboard.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -390,6 +545,7 @@
 			name = "Redux+VM";
 			packageProductDependencies = (
 				A8C2A62E243C953B009E489F /* NVActivityIndicatorView */,
+				A8274BD32451B2DD00630329 /* Alamofire */,
 			);
 			productName = "Redux+VM";
 			productReference = A8C2A5C3243AF016009E489F /* Redux+VM.app */;
@@ -443,6 +599,7 @@
 			mainGroup = A8C2A5BA243AF015009E489F;
 			packageReferences = (
 				A8C2A62D243C953B009E489F /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				A8274BD22451B2DC00630329 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = A8C2A5C4243AF016009E489F /* Products */;
 			projectDirPath = "";
@@ -459,6 +616,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A87F03D62452CE0600C50ACC /* News.json in Resources */,
 				A8C2A6652444247F009E489F /* ForgotPasswordViewController.xib in Resources */,
 				A8C2A5D3243AF022009E489F /* LaunchScreen.storyboard in Resources */,
 				A8C2A622243B09C0009E489F /* Main.storyboard in Resources */,
@@ -466,6 +624,7 @@
 				A8C2A602243AF242009E489F /* NavigationScreenViewController.xib in Resources */,
 				A8C2A61A243AF8B4009E489F /* LoginScreenViewController.xib in Resources */,
 				A8C2A63D243CAD12009E489F /* DashboardViewController.xib in Resources */,
+				A83ECA32244DD2C600E82EAA /* Settings.bundle in Resources */,
 				A8C2A657243EF981009E489F /* SignupScreenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +633,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A87F03D12452C80400C50ACC /* News.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,18 +645,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8C2A5CB243AF016009E489F /* ViewController.swift in Sources */,
+				A8274BCF2451AAB500630329 /* ReceiptsScreenViewController.swift in Sources */,
 				A8C2A628243B2167009E489F /* LoginScreenAction.swift in Sources */,
+				A8274BC6245170E300630329 /* DLDemoMenuViewController.swift in Sources */,
+				A8274BDC2452A23900630329 /* MenuScreenAction.swift in Sources */,
 				A8C2A65F243F8209009E489F /* ForgotPasswordScreenAction.swift in Sources */,
 				A8C2A668244424AF009E489F /* ForgotPasswordScreenViewModel.swift in Sources */,
 				A8C2A5C7243AF016009E489F /* AppDelegate.swift in Sources */,
+				A8274BBB2451537D00630329 /* NavigationController+CompletionBlock.swift in Sources */,
 				A8C2A632243CAA3C009E489F /* DashboardScreenReducer.swift in Sources */,
+				A8274BDE2452A36000630329 /* AppStoryboard.swift in Sources */,
 				A8C2A60B243AF2D5009E489F /* Log.swift in Sources */,
 				A8C2A640243CAD3F009E489F /* DashboardScreenViewModel.swift in Sources */,
+				A87F03C72452B75800C50ACC /* ServiceManager.swift in Sources */,
 				A8C2A60C243AF2D5009E489F /* AppBuilder.swift in Sources */,
 				A8C2A6642444247F009E489F /* ForgotPasswordViewController.swift in Sources */,
 				A8C2A61E243AF8B4009E489F /* LoginScreenViewModel.swift in Sources */,
+				A8274BDA2452A23900630329 /* MenuScreenBuilder.swift in Sources */,
 				A8C2A634243CAA64009E489F /* DashboardScreenState.swift in Sources */,
 				A8C2A5F4243AF1FC009E489F /* GuiReducer.swift in Sources */,
+				A8274BD92452A23900630329 /* MenuScreenReducer.swift in Sources */,
 				A8C2A60E243AF2D5009E489F /* KeychainPasswordItem.swift in Sources */,
 				A8C2A62C243C4653009E489F /* LoginScreenReducer.swift in Sources */,
 				A8C2A610243AF2D5009E489F /* DefaultConfiguration.swift in Sources */,
@@ -504,27 +672,37 @@
 				A8C2A600243AF242009E489F /* NavigationScreenState.swift in Sources */,
 				A8C2A64D243D9CD0009E489F /* SignupScreenAction.swift in Sources */,
 				A8C2A651243D9CF6009E489F /* SignupScreenReducer.swift in Sources */,
+				A8274BC02451682700630329 /* DLHamburguerNavigationController.swift in Sources */,
 				A8C2A61B243AF8B4009E489F /* LoginScreenViewController.swift in Sources */,
 				A8C2A61F243AF8B4009E489F /* LoginScreenBuilder.swift in Sources */,
 				A8C2A5EC243AF05D009E489F /* RootReducer.swift in Sources */,
+				A87F03C92452B77800C50ACC /* ServiceManagerProtocol.swift in Sources */,
 				A8C2A64F243D9CE2009E489F /* SignupScreenState.swift in Sources */,
 				A8C2A624243B1FE9009E489F /* SignupScreenBuilder.swift in Sources */,
+				A8274BC12451682700630329 /* DLHamburguerContainerViewController.swift in Sources */,
 				A8C2A65D243F8208009E489F /* ForgotPasswordScreenReducer.swift in Sources */,
 				A8C2A62A243B2638009E489F /* LoginScreenState.swift in Sources */,
 				A8C2A5FE243AF242009E489F /* Screen.swift in Sources */,
+				A8274BDB2452A23900630329 /* MenuScreenState.swift in Sources */,
 				A8C2A660243F8209009E489F /* ForgotPasswordScreenBuilder.swift in Sources */,
 				A8C2A5EE243AF075009E489F /* Actions.swift in Sources */,
 				A8C2A60D243AF2D5009E489F /* KeychainConfiguration.swift in Sources */,
 				A8C2A5FF243AF242009E489F /* NavigationScreenReducer.swift in Sources */,
+				A87F03CC2452B98500C50ACC /* Article.swift in Sources */,
 				A8C2A5F0243AF087009E489F /* RootState.swift in Sources */,
 				A8C2A638243CAA84009E489F /* DashboardScreenBuilder.swift in Sources */,
 				A8C2A656243EF981009E489F /* SignupScreenViewController.swift in Sources */,
 				A8C2A636243CAA75009E489F /* DashboardScreenAction.swift in Sources */,
 				A8C2A65E243F8209009E489F /* ForgotPasswordScreenState.swift in Sources */,
+				A8274BBF2451682700630329 /* DLHamburguerViewController.swift in Sources */,
 				A8C2A601243AF242009E489F /* NavigationScreenAction.swift in Sources */,
+				A8274BCD2451A7E200630329 /* ReceiptScreenBuilder.swift in Sources */,
 				A8C2A60F243AF2D5009E489F /* KeychainService.swift in Sources */,
 				A8C2A5F5243AF1FC009E489F /* GuiState.swift in Sources */,
+				A8274BE42452A96C00630329 /* MenuViewController.swift in Sources */,
 				A8C2A5FD243AF242009E489F /* NavigationScreenViewController.swift in Sources */,
+				A87F03CE2452BE0C00C50ACC /* APIConstants.swift in Sources */,
+				A8274BE12452A42900630329 /* MenuScreenViewModel.swift in Sources */,
 				A8C2A5EA243AF048009E489F /* Store.swift in Sources */,
 				A8C2A63C243CAD12009E489F /* DashboardViewController.swift in Sources */,
 			);
@@ -535,6 +713,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8C2A5DE243AF022009E489F /* Redux_VMTests.swift in Sources */,
+				A83ECA34244EC90700E82EAA /* SignupTests.swift in Sources */,
+				A83ECA36244ED1FA00E82EAA /* ForgotPasswordTests.swift in Sources */,
+				A87F03D32452C85300C50ACC /* ServiceManagerTests.swift in Sources */,
+				A87F03D52452C8AB00C50ACC /* MockServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -795,6 +977,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A8274BD22451B2DC00630329 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
 		A8C2A62D243C953B009E489F /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView";
@@ -806,6 +996,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A8274BD32451B2DD00630329 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8274BD22451B2DC00630329 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		A8C2A62E243C953B009E489F /* NVActivityIndicatorView */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A8C2A62D243C953B009E489F /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;

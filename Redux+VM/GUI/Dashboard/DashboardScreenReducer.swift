@@ -19,6 +19,10 @@ struct DashboardScreenReducer {
         switch action {
         case .signout:
             currentState = .signout
+        case .fetchingNews:
+            currentState = .fetchingDataInProgress
+        case .reload:
+            currentState = .fetched
         }
         return DashboardScreenState(dashboardState: currentState)
     }

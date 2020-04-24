@@ -16,12 +16,14 @@ struct SignUpDataModel {
 
 class SignupScreenViewModel {
     private let store: Store
+    private let dataStore: DataStore
     private var currentState: SignupScreenState?
     weak var view: SignupView?
     private var signupData: SignUpDataModel?
     
     init(dependencies: Dependencies) {
         store = dependencies.store
+        dataStore = dependencies.dataStore
         store.subscribe(observer: self)
     }
     // MARK: - View functions
@@ -32,7 +34,7 @@ class SignupScreenViewModel {
     
     func gotoLogin() {
         store.dispatch(action: LoginScreenAction.reset)
-        store.dispatch(action: NavigationScreenAction.switchScreen(screen: .loginScreen, presentation: .pop(animate: true)))
+        store.dispatch(action: NavigationScreenAction.switchScreen(screen: .loginScreen, presentation: .replace))
     }
     
     func registerUser() {
@@ -45,6 +47,7 @@ class SignupScreenViewModel {
     
     func validate(username: String, password: String, confirmPassword: String) {
         if username.count > 4, password.count > 4, confirmPassword.count > 4, password == confirmPassword { // Any other validation logic
+            
             store.dispatch(action: SignupScreenAction.localValidation(isSuccess: true))
         } else {
             store.dispatch(action: SignupScreenAction.localValidation(isSuccess: false))

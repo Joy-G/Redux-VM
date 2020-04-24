@@ -10,4 +10,6 @@ import Foundation
 
 enum DashboardScreenAction: Action {
     case signout
+    case fetchingNews
+    case reload
 }

@@ -1,0 +1,87 @@
+﻿{
+  "status": "ok",
+  "source": "techcrunch",
+  "sortBy": "top",
+  "articles": [
+    {
+      "author": "Connie Loizos",
+      "title": "How deal terms are changing right now",
+      "description": "Trying to raise money for a startup is never a walk in the park. Still, there are good times, there are bad times, and there is right now, a moment of uncertainty unlike anything that most of us have experienced in our lifetimes. Even if a startup breezed through a fundraise before the world was [&…",
+      "url": "https://techcrunch.com/2020/04/23/how-deal-terms-are-changing-right-now/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2015/10/shutterstock_256635616.jpg?w=533",
+      "publishedAt": "2020-04-24T05:27:20Z"
+    },
+    {
+      "author": "Catherine Shu",
+      "title": "Gogoro's new e-bike brand Eeyo will launch in the U.S. first",
+      "description": "Gogoro, the Taiwanese company known for its electric scooters, announced a new ebike brand that will go on sale in the United States first. Details about the ebike, called Eeyo, haven’t been released yet, but it is noteworthy because it marks Gogoro’s first product launch in the U.S. Eeyo be availa…",
+      "url": "https://techcrunch.com/2020/04/23/gogoros-new-e-bike-brand-eeyo-will-launch-in-the-u-s-first/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/04/gogoroflagship3.jpg?w=711",
+      "publishedAt": "2020-04-24T03:27:48Z"
+    },
+    {
+      "author": "Taylor Hatmaker",
+      "title": "House passes COVID-19 relief package to replenish PPP loan funding",
+      "description": "On Thursday, the House passed the newest federal stimulus package aimed at providing financial relief for businesses and institutions hit hard by the COVID-19 crisis. The bill lingered in the Senate for two weeks of debates, with Republicans seeking to pass a less comprehensive version of the legis…",
+      "url": "https://techcrunch.com/2020/04/23/ppp-house-interim-bill-covid-relief/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/04/pelosi-house-GettyImages-1210778517.jpg?w=600",
+      "publishedAt": "2020-04-23T22:21:48Z"
+    },
+    {
+      "author": "Brian Heater",
+      "title": "The changing face of employment law during a global pandemic",
+      "description": "Prompted by Jeff Bezos’s plans to test all Amazon employees for the virus that causes COVID-19, we wondered whether employers can mandate employee testing, regardless of symptoms. The issue pits public safety against personal privacy, but limited testing availability has rendered the question somew…",
+      "url": "https://techcrunch.com/2020/04/23/the-changing-face-of-employment-law-during-a-global-pandemic/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1217694014.jpg?w=654",
+      "publishedAt": "2020-04-23T21:32:53Z"
+    },
+    {
+      "author": "Kirsten Korosec",
+      "title": "Tesla's newest board member has a long stance against short selling",
+      "description": "Tesla has added Hiromichi Mizuno as a new member to its board of directors and audit committee — the former chief investment officer of Japan’s $1.5 trillion pension fund and a longtime opponent of common market practices like short selling. With Mizuno’s appointment the Tesla board now…",
+      "url": "https://techcrunch.com/2020/04/23/teslas-newest-board-member-has-a-long-stance-against-short-selling/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/03/GettyImages-1008732780.jpeg?w=600",
+      "publishedAt": "2020-04-23T21:14:26Z"
+    },
+    {
+      "author": "Anthony Ha, Jordan Crook, Darrell Etherington",
+      "title": "Original Content podcast: 'Too Hot to Handle' might be a work of evil genius",
+      "description": "Is “Too Hot to Handle” the dumbest show on Netflix … or the most diabolically brilliant? The reality TV series brings a group of twentysomethings together on a secluded tropical retreat, then — after a brief getting-to-know-you period — warns them that anything even coming close t…",
+      "url": "https://techcrunch.com/2020/04/23/original-content-too-hot-to-handle/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/04/THTH_103_Unit_00442R.jpg?w=600",
+      "publishedAt": "2020-04-23T21:06:15Z"
+    },
+    {
+      "author": "Jonathan Shieber",
+      "title": "An LA-led, public-private partnership pitches a $150B green infrastructure package to Congress",
+      "description": "Representatives from the government and the utility managing the power of Los Angeles are proposing a sweeping infrastructure package worth roughly $150 billion centered on the broad electrification of transportation and industry. Drafted by the Los Angeles-based public-private Transportation Elect…",
+      "url": "https://techcrunch.com/2020/04/23/an-la-led-public-private-partnership-pitches-a-150b-green-infrastructure-package-to-congress/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2017/05/gettyimages-88828901.jpg?w=606",
+      "publishedAt": "2020-04-23T20:52:35Z"
+    },
+    {
+      "author": "Josh Constine",
+      "title": "Google ditched tipping feature for donating money to sites",
+      "description": "Leaked images obtained by TechCrunch reveal that Google considered and designed a feature that would let people donate money to websites to help support news publishers, bloggers, and musicians. But Google scrapped the idea and chose not to build out the product, despite these kinds of businesses a…",
+      "url": "https://techcrunch.com/2020/04/23/google-contributor-donate-tips/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/04/Google-Contributor-Tipping.jpg?w=764",
+      "publishedAt": "2020-04-23T20:05:19Z"
+    },
+    {
+      "author": "Devin Coldewey",
+      "title": "FCC updates orbital debris rules for the first time since 2004",
+      "description": "The FCC has finally gotten around to updating its 15-year-old orbital debris rules, adding new requirements and streamlining the approval process. With hundreds of satellites going up every year into increasingly crowded orbits, these rules are more important than ever. In stating the necessity for…",
+      "url": "https://techcrunch.com/2020/04/23/fcc-updates-orbital-debris-rules-for-the-first-time-since-2004/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2019/09/space-debris.jpg?w=764",
+      "publishedAt": "2020-04-23T19:55:38Z"
+    },
+    {
+      "author": "Anna Escher",
+      "title": "Nuvocargo, a trucking managed marketplace, raises $5.3M in seed funding",
+      "description": "U.S. companies rely on Mexican manufacturers for goods ranging from automotive and aerospace parts, avocados and other produce, to electronics and furniture. But the trucking system that transports these things across the border relies on an inefficient mix of paper, phone calls, faxes and too many…",
+      "url": "https://techcrunch.com/2020/04/23/nuvocargo-a-trucking-managed-marketplace-raises-5-3m-in-seed-funding/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2019/03/GettyImages-890275700.jpg?w=600",
+      "publishedAt": "2020-04-23T19:23:53Z"
+    }
+  ]
+}

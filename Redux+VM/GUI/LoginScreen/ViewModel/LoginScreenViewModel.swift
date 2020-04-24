@@ -2,19 +2,20 @@
 
 import UIKit
 
-struct LoginData {
+struct LoginDataModel {
     let username: String
     let password: String
 }
 
 class LoginScreenViewModel {
     private let store: Store
+    private let dataStore: DataStore
     private var currentState: LoginScreenState?
-    private var loginData: LoginData?
     weak var view: LoginView?
     
     init(dependencies: Dependencies) {
         store = dependencies.store
+        dataStore = dependencies.dataStore
         store.subscribe(observer: self)
     }
     // MARK: - View functions
@@ -24,6 +25,7 @@ class LoginScreenViewModel {
     }
     
     func gotoForgotPassword() {
+        store.dispatch(action: ForgotPasswordScreenAction.reset)
         store.dispatch(action: NavigationScreenAction.switchScreen(screen: .forgotpasswordScreen, presentation: .replace))
     }
     
@@ -32,7 +34,8 @@ class LoginScreenViewModel {
     }
     
     func gotoSignUp() {
-        store.dispatch(action: NavigationScreenAction.switchScreen(screen: .signupScreen, presentation: .push(animate: true)))
+        store.dispatch(action: SignupScreenAction.reset)
+        store.dispatch(action: NavigationScreenAction.switchScreen(screen: .signupScreen, presentation: .replace))
     }
     
     func gotoDashboard() {
@@ -45,7 +48,7 @@ class LoginScreenViewModel {
     
     func validate(username: String, password: String) {
         if username.count > 4, password.count > 4 { // Any other validation logic
-            loginData = LoginData(username: username, password: password)
+            dataStore.loginData = LoginDataModel(username: username, password: password)
             store.dispatch(action: LoginScreenAction.localValidation(isSuccess: true))
         } else {
             store.dispatch(action: LoginScreenAction.localValidation(isSuccess: false))
@@ -54,7 +57,6 @@ class LoginScreenViewModel {
     
     func checkLogin(withState currentState: LoginScreenState) {
         if currentState.loginState == .validateUserCredentials {
-            print(loginData as Any)
             DispatchQueue.global().asyncAfter(deadline: DispatchTime.now() + DispatchTimeInterval.seconds(5), execute: { [weak self] in
                 self?.store.dispatch(action: LoginScreenAction.didReceivedUserInfo)
             })

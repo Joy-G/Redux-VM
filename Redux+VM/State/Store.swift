@@ -75,3 +75,16 @@ class Store {
         os_log(.info, log: .store, "dispatching Action: %@", "\(action)")
     }
 }
+
+class DataStore {
+    var loginData: LoginDataModel?
+    var forgotPasswordData: ForgotPasswordDataModel?
+    
+    func addLoginData(data: LoginDataModel) {
+        loginData = data
+    }
+    
+    func addFPData(data: ForgotPasswordDataModel) {
+        forgotPasswordData = data
+    }
+}

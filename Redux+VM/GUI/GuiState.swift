@@ -12,5 +12,6 @@ struct GuiState {
     let loginScreen: LoginScreenState
     let signupScreen: SignupScreenState
     let forgotpasswordScreen: ForgotPasswordScreenState
-//    let dashboardScreen: DashboardScreenState
+    let menuScreen: MenuScreenState
+    let dashboardScreen: DashboardScreenState
 }

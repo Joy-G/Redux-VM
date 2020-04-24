@@ -66,7 +66,6 @@ class SignupScreenViewController: UIViewController, NVActivityIndicatorViewable 
     }
     
     private func updateUI(state: SignupScreenState) {
-        print("\(state.signupState)")
         switch state.signupState {
         case .empty:
             resetUI()

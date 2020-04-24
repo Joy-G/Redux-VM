@@ -17,14 +17,15 @@ class AppBuilder {
 
     init() {
         let store = Store()
-        //        let communication = Communication(store: store, ompApi: ompApi)
-        let formatter = Formatter()
+        let dataStore = DataStore()
         dependencies = DependencyContainer(store: store,
-                                           formatter: formatter)
+                                           dataStore: dataStore)
         view = NavigationScreenViewController(dependencies: dependencies)
     }
 
     func main() -> UIViewController {
+        
+        
         let navigation = UINavigationController(rootViewController: view)
         navigation.navigationBar.isTranslucent = true
         navigation.navigationBar.isHidden = true
@@ -37,22 +38,18 @@ class AppBuilder {
 
 struct DependencyContainer: Dependencies {
     let store: Store
-    //let communication: Communication
-    var formatter: Formatter
+    let dataStore: DataStore
 }
 
 protocol StoreSupplier {
     var store: Store { get }
 }
 
-//protocol CommunicationSupplier {
-//    var communication: Communication { get }
-//}
-
-protocol FormatterSupplier {
-    var formatter: Formatter { get }
+protocol DataStoreSupplier {
+    var dataStore: DataStore { get }
 }
 
+
 /// Typealias including all dependencies.
-typealias Dependencies = StoreSupplier & FormatterSupplier
+typealias Dependencies = StoreSupplier & DataStoreSupplier
 

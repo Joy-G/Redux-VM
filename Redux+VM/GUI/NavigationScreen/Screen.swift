@@ -12,4 +12,5 @@ enum Screen {
     case signupScreen
     case forgotpasswordScreen
     case dashboardScreen
+    case receipts
 }
