@@ -13,10 +13,11 @@ class DashboardScreenViewModel {
     private var currentState: DashboardScreenState?
     weak var view: DashboardView?
     
-    private var dataModel: News?
+    private var dataStore: DataStore?
     
     init(dependencies: Dependencies) {
         store = dependencies.store
+        dataStore = dependencies.dataStore
         store.subscribe(observer: self)
     }
     // MARK: - View functions
@@ -26,11 +27,11 @@ class DashboardScreenViewModel {
     }
     
     var numberOfRows: Int {
-        return dataModel?.articles?.count ?? 0
+        return dataStore?.dashboardData?.articles?.count ?? 0
     }
     
     func getCellData(forIndexPath indexPath: IndexPath) -> Article? {
-        if let articles = dataModel?.articles, articles.count > indexPath.row {
+        if let articles = dataStore?.dashboardData?.articles, articles.count > indexPath.row {
             return articles[indexPath.row]
         }
         return nil
@@ -41,7 +42,7 @@ class DashboardScreenViewModel {
         store.dispatch(action: DashboardScreenAction.fetchingNews)
         ServiceManager.sharedInstance.fetchArticle {[weak self] (news, error) in
             if error == nil {
-                self?.dataModel = news
+                self?.dataStore?.dashboardData = news
                 self?.store.dispatch(action: DashboardScreenAction.reload)
             }
         }

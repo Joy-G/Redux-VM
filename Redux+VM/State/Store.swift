@@ -79,12 +79,5 @@ class Store {
 class DataStore {
     var loginData: LoginDataModel?
     var forgotPasswordData: ForgotPasswordDataModel?
-    
-    func addLoginData(data: LoginDataModel) {
-        loginData = data
-    }
-    
-    func addFPData(data: ForgotPasswordDataModel) {
-        forgotPasswordData = data
-    }
+    var dashboardData: News?
 }
